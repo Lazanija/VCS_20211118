@@ -5,3 +5,10 @@ table, th, td {
 td {
     padding-left: 15px;
 }
+
+table {
+    height: 140px;
+    width: 50%;
+
+}
+
