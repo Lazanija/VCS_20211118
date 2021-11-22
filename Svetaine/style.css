@@ -22,6 +22,16 @@ body {
     grid-column-end: 4;
 }
 
+.search-box {
+    position: absolute;
+    right: 0px;
+    top: 107px;
+    width: 35%;
+}
+.search-box [type]{
+    width: 100%;
+}
+
 .navigation-menu{
     grid-row-start: 2;
     grid-row-end: 4;
@@ -30,4 +40,10 @@ body {
 .content{
     grid-row-start: 2;
     grid-row-end: 4;
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
 }
