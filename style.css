@@ -12,3 +12,22 @@ table {
 
 }
 
+li {
+    color: blue;
+}
+
+#pgr li:nth-child(2) {
+    width: 100px;
+    height: 100px;
+}
+
+#pgr li:nth-child(3), li:nth-child(2) {
+    color: red;
+}
+
+#pgr li:nth-child(2n) {
+    font-weight: bold;
+}
+
+
+
