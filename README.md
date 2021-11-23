@@ -1,1 +1,0 @@
-Vilnius Coding School HTML/CSS/JS tasks
