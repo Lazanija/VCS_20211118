@@ -31,7 +31,7 @@ html, body {
 
 .remai #fixed {
     background-color: royalblue;
-    position: fixed;
+    position: absolute;
     width: 100px;
     height: 100px;
     text-align: right;
@@ -72,3 +72,32 @@ html, body {
     top: 30px;
     left: 30px;
 }
+
+.lenta div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    background-color: gray;
+
+    float: left;
+}
+
+.lenta div:nth-child(5n+1) {
+    clear: both;
+}
+
+.lenta .a-b {
+    background-color: lightblue;
+}
+
+.lenta .a-g {
+    background-color: lightgreen;
+}
+
+.lenta .a-p {
+    background-color: lightpink;
+}
+
+
+
