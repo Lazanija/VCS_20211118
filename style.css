@@ -1,3 +1,8 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 table, th, td {
     border: 1px dashed black;
 }
@@ -30,5 +35,31 @@ li {
     font-weight: bold;
 }
 
+header {
+    background-color: lightpink;
+}
+
+aside {
+    background-color: cadetblue;
+    float: left;
+    width: 250px;
+}
+
+main {
+    background-color: yellow;
+    float: left;
+    width: 84%;
+}
+
+footer {
+    background-color: darkgray;
+    color: white;
+    clear: both;
+
+}
+
+.turinys {
+    width: 100%;
+}
 
 
