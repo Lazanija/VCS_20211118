@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 15vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+
+}
+
+.container {
+    border-bottom: 1px solid black;
+}
+
+.container-2 div {
+    border: 1px solid black;
+}
+
+.container-2 {
+    height: 80vh;
+
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+
+    margin: 20px;
+}
+
+.logo h1 {
+    text-align: center;
+    border: 1px solid black;
+    width: 1fr;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.header {
+    text-align: right;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.header ul, .section ul, .section-2 ul, .feature ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li, .section li{
+    display: inline-block;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    display: block;
+    font-size: x-large;
+    padding: 20px;
+}
+
+.search-box {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 23.5%;
+    margin-right: 20px;
+}
+.search-box [type]{
+    width: 100%;
+}
+
+.section {
+    text-align: center;
+    padding: 10px;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.section a{
+     text-decoration: none;
+     color: black;
+     width: 250px;
+     display: block;
+ }
+
+.section li {
+    font-size: x-large;
+}
+
+.section-2 {
+    text-align: left;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    padding: 10px;
+}
+
+.section-2 li {
+    margin: 10px 0;
+    font-size: x-large;
+}
+
+.image {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature {
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    padding: 10px;
+}
+
+.feature li {
+    margin: 10px 0;
+    font-size: x-large;
+}
+
+.dummy {
+    padding: 10px;
+    text-align: justify;
+}
+
+.links {
+    padding: 10px;
+}
