@@ -1,0 +1,74 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.remai {
+    border: 1px solid black;
+    width: 400px;
+    height: 470px;
+}
+
+.remai #static {
+    background-color: gray;
+    position: static;
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.remai #absolute {
+    background-color: deeppink;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    font-size: 24px;
+    top: 150px;
+    left: 50px;
+}
+
+.remai #fixed {
+    background-color: royalblue;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    font-size: 24px;
+    top: 150px;
+    left: 200px;
+}
+
+.remai #relative {
+    background-color: yellow;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    font-size: 24px;
+    top: 50px;
+    left: 50px;
+}
+
+.remai #relative-2 {
+    background-color: green;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    font-size: 24px;
+    top: 70px;
+    left: 200px;
+}
+
+.remai #absolute-2 {
+    background-color: blueviolet;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    font-size: 24px;
+    top: 30px;
+    left: 30px;
+}
