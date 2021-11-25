@@ -9,7 +9,7 @@ const LastDigitYear = year => +(year + '').slice(-1);
 const LastDigitMonth = month => +(month + '').slice(-1);
 const LastDigitDay = day => +(day + '').slice(-1);
 
-console.log("Paskutiniu metu sudeti skaiciai: ",LastDigitYear(year) + LastDigitMonth(month) + LastDigitDay(day));
+console.log("Gimimo datos paskutiniai sudeti skaiciai: ",LastDigitYear(year) + LastDigitMonth(month) + LastDigitDay(day));
 /* Uzd 1 */
 
 /* Uzd 2 */
