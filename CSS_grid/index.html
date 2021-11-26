@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="grid">
+    <div class="header" id="myheader">
+        <a href="#" class="active">Home</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunc()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="sidebar">
+        <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-wrench"></i> Support</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores consectetur
+        corporis error fugit illo impedit ipsam molestias nam natus necessitatibus numquam odio optio, perspiciatis
+        provident saepe velit voluptas, voluptate?
+    </div>
+    <article>
+        <img src="../Images/Is-Arcane-Season-2-Officially-Confirmed-by-Riot-Games-1140x641.jpg" alt="Arcane">
+        <p>Arcane Season 2 Officially Confirmed With a New Teaser</p>
+        <p id="small">Riot Games and Netflix have confirmed that Arcane will be getting a second season. After the explosive end
+            to season one, there’s still a lot of potential fallout that could happen in the cities of Piltover and
+            Zaun. But one of the biggest benefits of the League of Legends setting is how expansive it is. Piltover and
+            Zaun are just a slice of a larger world, and there might already be hints as to where the show could head
+            next.</p>
+    </article>
+    <div class="ad">
+        <h2>BUY NOW! BUY NOW! BUY NOW! BUY NOW! BUY NOW!</h2>
+    </div>
+    <div class="footer">Visos teisės saugomos &copy; 2021</div>
+</main>
+
+<script>
+    function myFunc() {
+        var x = document.getElementById("myheader");
+        if (x.className === "header") {
+            x.className += " responsive";
+        } else {
+            x.className = "header";
+        }
+    }
+</script>
+</body>
+</html>
