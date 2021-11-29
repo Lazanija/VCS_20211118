@@ -1,9 +1,20 @@
+/* Uzd 1 (teorijos uzd) */
+let a = 1;
+console.log("Kintamojo a reiksme: " + a);
+a++;
+console.log("Kintamojo a reiksme: " + a);
+
+/* Uzd 2 (teorijos uzd) */
+let b = 'Dominykas Puškorius';
+let c = "Mano Vardas";
+console.log(c + " " + b);
+
 /* JavaScript 1 dalis */
 
 /* Uzd 1 */
-year = 1998;
-month = 8;
-day = 21;
+let year = 1998;
+let month = 8;
+let day = 21;
 
 const LastDigitYear = year => +(year + '').slice(-1);
 const LastDigitMonth = month => +(month + '').slice(-1);
