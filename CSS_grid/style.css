@@ -112,6 +112,21 @@ article #small {
         display: block;
         text-align: left;
     }
+
+    main {
+        display: grid;
+        grid-template-areas:
+    'header'
+    'text'
+    'footer'
+    ;
+        grid-template-columns: 4fr;
+        grid-template-rows: 50px auto 50px;
+    }
+
+    .sidebar, article, .ad {
+        display: none;
+    }
 }
 
 /* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
@@ -125,7 +140,11 @@ article #small {
     'footer'
     ;
         grid-template-columns: 4fr;
-        grid-template-rows: 50px auto auto auto 50px;
+        grid-template-rows: 50px auto auto 50px;
+    }
+
+    .sidebar, .text {
+        display: none;
     }
 }
 
@@ -135,15 +154,20 @@ article #small {
         display: grid;
         grid-template-areas:
     'header header'
-    'text article'
-    'text article'
+    'text text'
+    'article ad'
     'footer footer'
     ;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px auto auto 50px;
     }
+
     .sidebar {
         display: none;
+    }
+
+    .text {
+        display: block;
     }
 }
 
@@ -171,7 +195,7 @@ article #small {
         font-size: small;
     }
 
-    .sidebar {
+    .sidebar, .ad, .text {
         display: block;
     }
 }
@@ -199,7 +223,7 @@ article #small {
         color: white;
         padding: 9px 10px 10px 16px;
     }
-    .sidebar {
+    .sidebar, .ad, .text {
         display: block;
     }
 }
