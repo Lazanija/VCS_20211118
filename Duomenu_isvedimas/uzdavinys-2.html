@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p id="ats"></p>
+<script>
+    let ats;
+    let int1 = [a = -5, b = 0];
+    let int2 = [c = -4, d = 4];
+
+    if (c > a || d > b) {
+        answer = "Nera";
+    } else {
+        cut_x = max(a, c);
+        cut_y = max(d, b);
+        answer = [cut_x, cut_y];
+    }
+
+    document.getElementById("ats").innerHTML = answer;
+</script>
+</body>
+</html>
