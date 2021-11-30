@@ -16,11 +16,11 @@ let year = 1998;
 let month = 8;
 let day = 21;
 
-const LastDigitYear = year => +(year + '').slice(-1);
-const LastDigitMonth = month => +(month + '').slice(-1);
-const LastDigitDay = day => +(day + '').slice(-1);
+const LastDigitYear = year % 10;
+const LastDigitMonth = month % 10;
+const LastDigitDay = day % 10;
 
-console.log("Gimimo datos paskutiniai sudeti skaiciai: ",LastDigitYear(year) + LastDigitMonth(month) + LastDigitDay(day));
+console.log("Gimimo datos paskutiniai sudeti skaiciai: ", LastDigitYear + LastDigitMonth + LastDigitDay);
 /* Uzd 1 */
 
 /* Uzd 2 */
