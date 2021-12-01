@@ -11,15 +11,16 @@
 <p id="ats"></p>
 <script>
     let ats;
-    let int1 = [a = -5, b = 0];
-    let int2 = [c = -4, d = 4];
+    let a=-5; let b=0; let c=-4; let d=4;
+    let int1 = [a, b];
+    let int2 = [c, d];
 
-    if (c > a || d > b) {
-        answer = "Nera";
+    if ((d >= a) && (c <= b)) {
+        let cut_x = Math.max(a, c);
+        let cut_y = Math.min(d, b);
+        answer = "Rėžis: " + [cut_x, cut_y];
     } else {
-        cut_x = max(a, c);
-        cut_y = max(d, b);
-        answer = [cut_x, cut_y];
+        answer = "Null";
     }
 
     document.getElementById("ats").innerHTML = answer;
