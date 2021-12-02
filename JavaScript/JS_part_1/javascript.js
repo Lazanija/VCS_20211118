@@ -39,4 +39,40 @@ console.log("Plotas: ",plotas(r), "Ilgis: ", ilgis(r));
 /* Uzd 2 */
 
 /* JavaScript 1 dalis */
+/* JavaScript 2 dalis */
+
+/* Uzd 1 */
+let vardas = "Tomas";
+let pavarde = "Tomauskas";
+let kursas = 4;
+let kur_mokosi = "KTU";
+let pazymiai = [7, 4, 5];
+/* Uzd 1 */
+
+/* Uzd 2 */
+let answer = "'" + vardas + " " + pavarde + " mokosi " + kur_mokosi + ", " + kursas + " kurse, jo pažymiai: " + pazymiai + ".'";
+document.getElementById("ats").innerHTML = answer;
+/* Uzd 2 */
+
+/* Uzd 3 */
+let type_answer =
+    "vardas yra " + typeof vardas + "<br>" +
+    "pavarde yra " + typeof pavarde + "<br>" +
+    "kursas yra " + typeof kursas + "<br>" +
+    "kur_mokosi yra " + typeof kur_mokosi + "<br>" +
+    "pazymiai yra " + typeof pazymiai;
+document.getElementById("type").innerHTML = type_answer;
+/* Uzd 3 */
+
+/* Uzd 4 */
+const studentas = {
+    vardas1: "Tomas",
+    pavarde1: "Tomauskas",
+    kursas1: 4,
+    kur_mokosi1: "KTU",
+    pazymiai1: [7, 4, 5]
+};
+/* Uzd 4 */
+
+/* JavaScript 2 dalis */
 
