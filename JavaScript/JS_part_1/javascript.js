@@ -50,7 +50,7 @@ let pazymiai = [7, 4, 5];
 /* Uzd 1 */
 
 /* Uzd 2 */
-let answer = "'" + vardas + " " + pavarde + " mokosi " + kur_mokosi + ", " + kursas + " kurse, jo pažymiai: " + pazymiai + ".'";
+let answer = vardas + " " + pavarde + " mokosi " + kur_mokosi + ", " + kursas + " kurse, jo pažymiai: " + "[" +pazymiai + "]";
 document.getElementById("ats").innerHTML = answer;
 /* Uzd 2 */
 
@@ -73,6 +73,43 @@ const studentas = {
     pazymiai1: [7, 4, 5]
 };
 /* Uzd 4 */
+
+/* Uzd 5, 6 */
+let masyvas = [ "Tomas", "Tomauskas", 4, "KTU", [7, 4, 5]];
+console.log(masyvas);
+/* Uzd 5, 6 */
+
+/* Uzd 7 */
+let dot = "Dot notation: " + "<br>" +
+    studentas.vardas1 + " " +
+    studentas.pavarde1 + " mokosi " +
+    studentas.kur_mokosi1 + ", " +
+    studentas.kursas1 + " kurse, jo pažymiai: " + "[" +
+    studentas.pazymiai1 + "]";
+document.getElementById("dot").innerHTML = dot;
+
+let bracket = "Bracket notation" + "<br>" +
+    studentas['vardas1'] + " " +
+    studentas['pavarde1'] + " mokosi " +
+    studentas['kur_mokosi1'] + ", " +
+    studentas['kursas1'] + " kurse, jo pažymiai: " + "[" +
+    studentas['pazymiai1'] + "]";
+document.getElementById("bracket").innerHTML = bracket;
+/* Uzd 7 */
+
+/* Uzd 8 */
+for (let i = 0; i < masyvas.length; i++) {
+    let rez = masyvas[4];
+    document.getElementById("pazymiai").innerHTML = rez;
+}
+/* Uzd 8 */
+
+/* Uzd 9 */
+
+
+
+/* Uzd 9 */
+
 
 /* JavaScript 2 dalis */
 
