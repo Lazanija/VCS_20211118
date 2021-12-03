@@ -99,16 +99,9 @@ document.getElementById("bracket").innerHTML = bracket;
 
 /* Uzd 8 */
 for (let i = 0; i < masyvas.length; i++) {
-    let rez = masyvas[4];
-    document.getElementById("pazymiai").innerHTML = rez;
+    document.getElementById("pazymiai").innerHTML = masyvas[4];
 }
 /* Uzd 8 */
-
-/* Uzd 9 */
-
-
-
-/* Uzd 9 */
 
 
 /* JavaScript 2 dalis */
