@@ -103,6 +103,69 @@ for (let i = 0; i < masyvas.length; i++) {
 }
 /* Uzd 8 */
 
+/* Uzd 9 */
+for (let i = 0; i < masyvas.length; i++) {
+    let a = masyvas[4][0];
+    let b = masyvas[4][1];
+    let c = masyvas[4][2];
+    let max = 10;
+
+    if (a < max && b < max && c < max) {
+        a += 1;
+        b += 1;
+        c += 1;
+    }
+    else if (a === max && b < max && c < max) {
+        b += 1;
+        c += 1;
+    }
+    else if (a === max && b === max && c < max) {
+        c +=1;
+    }
+    else if (a < max && b === max && c < max) {
+        a += 1;
+        c += 1;
+    }
+    else if (a < max && b === max && c === max) {
+        a += 1;
+    }
+    else if (a < max && b < max && c === max) {
+        a += 1;
+        b += 1;
+    }
+    else if (a === max && b < max && c === max) {
+        b += 1;
+    }
+    else if (a === max && b === max && c === max)
+    {
+        document.getElementById("pakelti").innerHTML = a + " " + b + " " + c;
+    }
+    document.getElementById("pakelti").innerHTML = a + " " + b + " " + c;
+}
+/* Uzd 9 */
+
+/* Uzd 10 */
+for (let i = 0; i < masyvas.length; i++) {
+    let a = masyvas[4][0];
+    let b = masyvas[4][1];
+    let c = masyvas[4][2];
+    document.getElementById("suma").innerHTML = a + b + c;
+}
+/* Uzd 10 */
+
+/* Uzd 11 */
+for (let i = 0; i < masyvas.length; i++) {
+    let a = masyvas[4][0];
+    let b = masyvas[4][1];
+    let c = masyvas[4][2];
+
+    let x = a;
+    let y = b;
+    document.getElementById("sandauga").innerHTML = x * y;
+}
+/* Uzd 11 */
+
+
 
 /* JavaScript 2 dalis */
 
