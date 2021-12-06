@@ -50,7 +50,7 @@ let pazymiai = [7, 4, 5];
 /* Uzd 1 */
 
 /* Uzd 2 */
-let answer = vardas + " " + pavarde + " mokosi " + kur_mokosi + ", " + kursas + " kurse, jo pažymiai: " + "[" +pazymiai + "]";
+let answer = vardas + " " + pavarde + " mokosi " + kur_mokosi + ", " + kursas + " kurse, jo pažymiai: " + "[" + pazymiai + "]";
 document.getElementById("ats").innerHTML = answer;
 /* Uzd 2 */
 
@@ -145,27 +145,45 @@ for (let i = 0; i < masyvas.length; i++) {
 /* Uzd 9 */
 
 /* Uzd 10 */
-for (let i = 0; i < masyvas.length; i++) {
-    let a = masyvas[4][0];
-    let b = masyvas[4][1];
-    let c = masyvas[4][2];
-    document.getElementById("suma").innerHTML = a + b + c;
-}
+let a1 = masyvas[4][0];
+let b1 = masyvas[4][1];
+let c1 = masyvas[4][2];
+document.getElementById("suma").innerHTML = a1 + b1 + c1;
 /* Uzd 10 */
 
 /* Uzd 11 */
-for (let i = 0; i < masyvas.length; i++) {
-    let a = masyvas[4][0];
-    let b = masyvas[4][1];
-    let c = masyvas[4][2];
-
-    let x = a;
-    let y = b;
-    document.getElementById("sandauga").innerHTML = x * y;
-}
+let x = a1;
+let y = b1;
+document.getElementById("sandauga").innerHTML = x * y;
 /* Uzd 11 */
 
+/* Uzd 12 */
+let kursas2 = masyvas[2];
+document.getElementById("12").innerHTML = "Kursas yra " + typeof kursas2 + " tipo";
+/* Uzd 12 */
 
+/* Uzd 13 */
+let tipas = typeof kursas2;
+if(kursas2 === 4) {
+    document.getElementById("13").innerHTML = "Studentas mokosi " + kursas2 + " kurse ir kurso tipas yra " + tipas;
+} else {
+    document.getElementById("13").innerHTML = "Studentas nesimoko 4 kurse";
+}
+/* Uzd 13 */
+
+/* Uzd 14 */
+let vardas2 = masyvas[0];
+let pavarde2 = masyvas[1];
+if(kursas2 === 4) {
+    document.getElementById("13").innerHTML = "Studentas " + vardas2 + " " + pavarde2 + " yra abiturientas";
+} else {
+    document.getElementById("13").innerHTML = "Studentui " + vardas2 + " " + pavarde2 + " dar toli iki mokslų baigimo";
+}
+/* Uzd 14 */
+
+/* Uzd 15 */
+
+/* Uzd 15 */
 
 /* JavaScript 2 dalis */
 
