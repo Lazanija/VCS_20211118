@@ -175,9 +175,9 @@ if(kursas2 === 4) {
 let vardas2 = masyvas[0];
 let pavarde2 = masyvas[1];
 if(kursas2 === 4) {
-    document.getElementById("13").innerHTML = "Studentas " + vardas2 + " " + pavarde2 + " yra abiturientas";
+    document.getElementById("14").innerHTML = "Studentas " + vardas2 + " " + pavarde2 + " yra abiturientas";
 } else {
-    document.getElementById("13").innerHTML = "Studentui " + vardas2 + " " + pavarde2 + " dar toli iki mokslų baigimo";
+    document.getElementById("14").innerHTML = "Studentui " + vardas2 + " " + pavarde2 + " dar toli iki mokslų baigimo";
 }
 /* Uzd 14 */
 
@@ -186,4 +186,29 @@ if(kursas2 === 4) {
 /* Uzd 15 */
 
 /* JavaScript 2 dalis */
+
+/* papildoma uzd */
+
+function sudetis(a, b) {
+    return a + b;
+}
+function atimtis(a, b) {
+    return a - b;
+}
+function dalyba(a, b) {
+    return a / b;
+}
+function daugyba(a, b) {
+    return a * b;
+}
+
+function result() {
+let isvesti = document.getElementsByClassName("rezultatai");
+
+for (let a=1; a<5; a++) {
+    for(let b=1; b<20; b+=2) {
+    isvesti[0].innerHTML += sudetis(a,b) + " " + atimtis(a,b) + " " + dalyba(a,b).toFixed(3) + " " + daugyba(a,b) + "<br>";
+        }
+    }
+}
 
