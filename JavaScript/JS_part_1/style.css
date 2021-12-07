@@ -1,0 +1,23 @@
+.sheet {
+    display: none;
+}
+#pirmas {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+}
+.tabs a {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+.sheets {
+    display: flex;
+    background-color: darkgrey;
+    width: 1000px;
+    height: 50px;
+}

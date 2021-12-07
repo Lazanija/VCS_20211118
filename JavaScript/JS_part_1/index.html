@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <p id="ats"></p>
@@ -20,6 +21,34 @@
 <p id="13"></p>
 <p id="14"></p>
 <p id="15"></p>
+
+<div class="tabs">
+    <a href="#pirmas" onclick="naujasTab('pirmas')">Fact #1</a>
+    <a href="#2" onclick="naujasTab('2')">Fact #2</a>
+    <a href="#3" onclick="naujasTab('3')">Fact #3</a>
+    <a href="#4" onclick="naujasTab('4')">Fact #4</a>
+    <a href="#5" onclick="naujasTab('5')">Fact #5</a>
+</div>
+
+<div class="sheets">
+    <div id="pirmas" class="sheet">Karaoke, a Japanese term meaning "empty orchestra, is an import from Japan.
+        In that country, karaoke bars are
+        for both pleasure and business. Taking a client to a bar and singing for them can mean the difference between
+        getting a contract or not; through karaoke you sing for your supper, literally.</div>
+    <div id="2" class="sheet">The original alphabet was developed by a Semitic people living in or near Egypt.*
+        They based it on the idea developed by the Egyptians, but used their own specific symbols.
+        It was quickly adopted by their neighbors and relatives to the east and north, the Canaanites, the Hebrews,
+        and the Phoenicians.</div>
+    <div id="3" class="sheet">The Earth rotates in about 24 hours. Therefore, if you were to hang above the surface
+        of the Earth at the equator without moving, you would see 25,000 miles pass by in 24 hours, at a speed
+        of 25000/24 or just over 1000 miles per hour.</div>
+    <div id="4" class="sheet">Karaoke, a Japanese term meaning "empty orchestra, is an import from Japan.
+        In that country, karaoke bars are
+        for both pleasure and business. Taking a client to a bar and singing for them can mean the difference between
+        getting a contract or not; through karaoke you sing for your supper, literally.</div>
+    <div id="5" class="sheet">Polar bears roam within the Arctic Circle—including the North Pole. Penguins are found
+        only in the Southern Hemisphere, mostly near Earth's South Pole, in Antarctica.</div>
+</div>
 
 <img src="https://www.pinclipart.com/picdir/big/451-4510719_png-file-svg-results-data-white-icon-clipart.png"
      alt="Result" style="width: 200px; height: 200px; cursor: pointer" onclick="result()">

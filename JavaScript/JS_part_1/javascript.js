@@ -187,7 +187,18 @@ if(kursas2 === 4) {
 
 /* JavaScript 2 dalis */
 
-/* papildoma uzd */
+/* tabai */
+
+let sheets = document.getElementsByClassName('sheet');
+
+function naujasTab(Id) {
+    for (let i = 0; i < sheets.length; i++) {
+        sheets[i].style.display = "none";
+    }
+    document.getElementById(Id).style.display = "block";
+}
+
+/* papildoma uzd 2 */
 
 function sudetis(a, b) {
     return a + b;
