@@ -223,3 +223,14 @@ for (let a=1; a<5; a++) {
     }
 }
 
+/* jQuery */
+
+$("*", document.body).click(function (event) {
+    event.stopPropagation();
+    let pasirinktas = $(this).get(0);
+    $("h1.kasas").text(pasirinktas.nodeName + " - skaicius yra: " + $(pasirinktas.nodeName).length);
+    $(pasirinktas).val().toUpperCase();
+    $(pasirinktas).css("background-color", "yellow");
+});
+
+
