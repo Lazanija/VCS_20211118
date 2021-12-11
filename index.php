@@ -54,6 +54,9 @@ echo '<br>';
 // d
 
 
+// e
+
+
 /* 1 uzd */
 /* 2 uzd */
 echo '<br>';
@@ -67,10 +70,28 @@ echo 'Vidutine temp : ' . $avg;
 echo '<br>';
 
 sort($temp);
+echo "Penkios žemiausios temp: ";
 for($x=0;$x<5;$x++) {
-    echo $temp[$x];
-    echo "<br>";
+    echo $temp[$x] . ", ";
 }
 
+echo '<br>';
 
+sort($temp);
+$ilgis = count($temp);
+echo "Penkios aukščiausios temp: ";
+for($x=$ilgis - 5; $x < $ilgis; $x++) {
+    echo $temp[$x] . ", ";
+}
+echo '<br>';
 /* 2 uzd */
+/* 3 uzd */
+echo '<br>';
+
+$arr = ["abcd", "abc", "de", "hjjj", "g", "wer"];
+$ilgis = array_map('strlen', $arr);
+
+echo "Trumpiausi masyvo elementai: " . min($ilgis) .
+    ". Ilgiausi masyvo elementai " . max($ilgis).'.';
+
+/* 3 uzd */
