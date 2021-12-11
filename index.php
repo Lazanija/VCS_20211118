@@ -89,9 +89,54 @@ echo '<br>';
 echo '<br>';
 
 $arr = ["abcd", "abc", "de", "hjjj", "g", "wer"];
-$ilgis = array_map('strlen', $arr);
 
-echo "Trumpiausi masyvo elementai: " . min($ilgis) .
-    ". Ilgiausi masyvo elementai " . max($ilgis).'.';
+$temp = array_map('strlen', $arr);
+
+echo min($temp) . '<br>' . max($temp);
+echo '<br>';
 
 /* 3 uzd */
+/* 4 uzd */
+
+$vardai = ["Jonas", "Petras", "Kazys", "Zigmas", "Ona", "Janina", "Kristina"];
+$pavardes = ["Joninis", "Petrinis", "Kazinis", "Zigminis", "Onienė",  "Jonė", "Kristė"];
+
+echo '<br>';
+
+/* 4 uzd */
+/* Funkcijos */
+
+function KmMile($kint, $koks) {
+    if($koks === 'kilometrai') {
+        return $kint * 0.621371;
+    }
+    if($koks === 'mylios') {
+        return $kint * 1.60934;
+    }
+}
+function KgPound($kint, $koks) {
+    if($koks === 'kilogramai') {
+        return $kint * 2.20462;
+    }
+    if($koks === 'poundai') {
+        return $kint * 0.453592;
+    }
+}
+function CelsFaren($kint, $koks) {
+    if($koks === 'celcijus') {
+        return $kint * 9/5 + 32;
+    }
+    if($koks === 'farenheitai') {
+        return ($kint - 32)* 5/9;
+    }
+}
+
+echo KmMile(20, 'kilometrai');
+echo '<br>';
+echo KgPound(10, 'kilogramai');
+echo '<br>';
+echo CelsFaren(10, 'celcijus');
+echo '<br>';
+
+
+/* Funkcijos */
