@@ -46,15 +46,24 @@ foreach ($ceu as $key => $value) {
 echo '<br>';
 
 // c
-
-print_r(array_slice($ceu, 2));
+$max = count($ceu);
+for ($i=0;$i<$max; $i += 2) {
+    $key = array_keys($ceu)[$i];
+    $value = $ceu[$key];
+    echo $key . ' sostinė yra ' . $value . '<br>';
+}
 
 echo '<br>';
 
 // d
 
-
+foreach ($ceu as $key => $value) {
+    if(str_contains($key, "A") || str_contains($value, "A")) {
+        echo $key . ' sostinė yra ' . $value . '<br>';
+    }
+}
 // e
+
 
 
 /* 1 uzd */
@@ -77,7 +86,6 @@ for($x=0;$x<5;$x++) {
 
 echo '<br>';
 
-sort($temp);
 $ilgis = count($temp);
 echo "Penkios aukščiausios temp: ";
 for($x=$ilgis - 5; $x < $ilgis; $x++) {
@@ -89,23 +97,37 @@ echo '<br>';
 echo '<br>';
 
 $arr = ["abcd", "abc", "de", "hjjj", "g", "wer"];
+$buvesMax = $max = -9999;
+$k = null;
+foreach ($arr as $key => $value) {
+    $max = strlen($value);
+    if ($max > $buvesMax) {
+        $k = $key;
+        $buvesMax = $max;
+    }
+}
+if (null !== $k) {
+    echo "Max elem: $arr[$k], eiles nr: $k";
+    echo '<br>';
+} else {
+    echo "Nerasta";
+    echo '<br>';
+}
 
-$temp = array_map('strlen', $arr);
-
-echo min($temp) . '<br>' . max($temp);
 echo '<br>';
-
 /* 3 uzd */
 /* 4 uzd */
-
 $vardai = ["Jonas", "Petras", "Kazys", "Zigmas", "Ona", "Janina", "Kristina"];
 $pavardes = ["Joninis", "Petrinis", "Kazinis", "Zigminis", "Onienė",  "Jonė", "Kristė"];
+$c = [1, 1, 2, 2, 1, 2, 2, 3, 1, 3, 2, 1, 1, 4, 2, 4, 1, 5, 2, 7, 1, 6, 2, 5, 1, 7, 2, 6];
 
+$kiekis = count($c);
+for ($i = 0; $i < $kiekis; $i+=2) {
+    echo $vardai[$c[$i] - 1] . ' ' . $pavardes[$c[$i+1] - 1] . '<br>';
+}
 echo '<br>';
-
 /* 4 uzd */
 /* Funkcijos */
-
 function KmMile($kint, $koks) {
     if($koks === 'kilometrai') {
         return $kint * 0.621371;
@@ -130,13 +152,10 @@ function CelsFaren($kint, $koks) {
         return ($kint - 32)* 5/9;
     }
 }
-
 echo KmMile(20, 'kilometrai');
 echo '<br>';
 echo KgPound(10, 'kilogramai');
 echo '<br>';
 echo CelsFaren(10, 'celcijus');
 echo '<br>';
-
-
 /* Funkcijos */
