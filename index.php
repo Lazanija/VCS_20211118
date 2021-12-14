@@ -128,7 +128,7 @@ for ($i = 0; $i < $kiekis; $i+=2) {
 echo '<br>';
 /* 4 uzd */
 /* Funkcijos */
-function KmMile($kint, $koks) {
+function KmMile(int|float $kint, string $koks): float {
     if($koks === 'kilometrai') {
         return $kint * 0.621371;
     }
@@ -136,7 +136,7 @@ function KmMile($kint, $koks) {
         return $kint * 1.60934;
     }
 }
-function KgPound($kint, $koks) {
+function KgPound(int|float $kint, string $koks): float {
     if($koks === 'kilogramai') {
         return $kint * 2.20462;
     }
@@ -144,18 +144,38 @@ function KgPound($kint, $koks) {
         return $kint * 0.453592;
     }
 }
-function CelsFaren($kint, $koks) {
+function CelsFaren(int|float $kint, string $koks): float {
     if($koks === 'celcijus') {
         return $kint * 9/5 + 32;
     }
     if($koks === 'farenheitai') {
+        switch($kint) {
+            case ($kint - 32)* 5/9 < -50:
+                echo 'Jūs tikriausiai negyvas : ';
+                break;
+            case ($kint - 32)* 5/9 < 0:
+                echo 'Lauke formuojasi ledas : ';
+                break;
+            case ($kint - 32)* 5/9 < 15:
+                echo 'Lauke vėsu : ';
+                break;
+            case ($kint - 32)* 5/9 > 15:
+                echo 'Lauke šilta : ';
+                break;
+            case ($kint - 32)* 5/9 > 30:
+                echo 'Geriau į lauką neiti : ';
+                break;
+            case ($kint - 32)* 5/9 > 50:
+                echo 'Jūs tikriausiai negyvas : ';
+                break;
+        }
         return ($kint - 32)* 5/9;
     }
 }
-echo KmMile(20, 'kilometrai');
+echo KmMile(100, 'mylios');
 echo '<br>';
 echo KgPound(10, 'kilogramai');
 echo '<br>';
-echo CelsFaren(10, 'celcijus');
+echo CelsFaren(-60, 'farenheitai');
 echo '<br>';
 /* Funkcijos */
