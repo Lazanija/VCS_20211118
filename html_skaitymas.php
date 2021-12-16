@@ -26,8 +26,7 @@ echo preg_replace("/pasauli/", $manoVardas, $naujas1);
 fclose($skaitymas);
 
 // 3 uzd
-$data = ["Dominykas" => 23];
-json_encode($data);
+$data = ['Dominykas' => 23];
 
 $temp = file_get_contents('duom.json');
 $tempArray = json_decode($temp, true);
