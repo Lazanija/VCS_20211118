@@ -30,8 +30,8 @@ $data = ['Dominykas' => 23];
 
 $temp = file_get_contents('duom.json');
 $tempArray = json_decode($temp, true);
-array_push($tempArray, $data);
-$jsonData = json_encode($tempArray);
+$newArray = array_merge($tempArray, $data);
+$jsonData = json_encode($newArray);
 print_r($jsonData);
 file_put_contents('duom.json', $jsonData);
 
