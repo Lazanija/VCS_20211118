@@ -178,4 +178,26 @@ echo KgPound(10, 'kilogramai');
 echo '<br>';
 echo CelsFaren(-60, 'farenheitai');
 echo '<br>';
+echo '<br>';
 /* Funkcijos */
+
+/* OOP */
+include "phpSession/Car.php";
+
+$tesla = new Car();
+
+$tesla->modelis = 'Model S';
+$tesla->spalva = 'Black';
+$tesla->greitis = 249;
+$tesla->durys = 4;
+
+echo $tesla->model();
+echo '<br>';
+echo $tesla->color();
+echo '<br>';
+echo $tesla->doors();
+echo '<br>';
+$tesla->drive(2);
+echo '<br>';
+echo 'Rida: ' . $tesla->mileage();
+
