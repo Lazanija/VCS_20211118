@@ -6,7 +6,11 @@ class Car
     public string $spalva;
     public int $greitis;
     public int $durys;
-    private float $rida = 0;
+    private float $rida;
+
+    public function __construct() {
+        $this->rida = 0;
+    }
 
     public function drive(float $time): void {
         echo "Auto važiuoja " . $this->greitis . " km/h greičiu " . $time . ' valandas';

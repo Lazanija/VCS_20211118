@@ -199,5 +199,7 @@ echo $tesla->doors();
 echo '<br>';
 $tesla->drive(2);
 echo '<br>';
+$tesla->drive(5);
+echo '<br>';
 echo 'Rida: ' . $tesla->mileage();
 
