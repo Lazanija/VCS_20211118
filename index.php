@@ -222,6 +222,19 @@ echo 'Nuvažiavom ' . $masina->atstumas .  ' KM ' . $masina->greitis . ' KM/H gr
      round($masina->kuras() - $masina->nuvaziavo(), 2) . ' L kuro.' .
      ' Sunaudojom ' . round($masina->sanaudos(), 2) . ' L kuro.';
 ;
+echo '<br>';echo '<br>';
+
+$masina->atstumas = 100;
+$masina->greitis = 30;
+
+$masina->piltiKura(20);
+
+echo 'Turim kuro: ' . $masina->kuras() . ' L';
+echo '<br>';
+echo 'Nuvažiavom ' . $masina->atstumas .  ' KM ' . $masina->greitis . ' KM/H greičiu ir liko: ' .
+    round($masina->kuras() - $masina->nuvaziavo(), 2) . ' L kuro.' .
+    ' Sunaudojom ' . round($masina->sanaudos(), 2) . ' L kuro.';
+;
 
 
 
